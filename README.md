@@ -21,7 +21,7 @@
 
 APIs run by the companies that train or fine-tune the models themselves.
 
-- [Google Gemini](https://aistudio.google.com/app/apikey) 🇺🇸 - Gemini 2.5 Pro, Flash, Flash-Lite +4 more. 10 RPM, 20 RPD.
+- [Google Gemini](https://aistudio.google.com/app/apikey) 🇺🇸 - Gemini 2.5 Pro, Flash, Flash-Lite +4 more. 5-15 RPM, 100-1K RPD. [^1]
 - [Cohere](https://dashboard.cohere.com/api-keys) 🇺🇸 - Command A, Command R+, Aya Expanse 32B +9 more. 20 RPM, 1K/mo.
 - [Mistral AI](https://console.mistral.ai/api-keys) 🇪🇺 - Mistral Large 3, Small 3.1, Ministral 8B +3 more. 1 req/s, 1B tok/mo.
 - [Zhipu AI](https://open.bigmodel.cn/usercenter/apikeys) 🇨🇳 - GLM-4.7-Flash, GLM-4.5-Flash, GLM-4.6V-Flash. Limits undocumented.
@@ -50,3 +50,4 @@ Know a free tier that's missing? [Open a PR](contributing.md). Include the provi
 - "Limits undocumented" means the provider doesn't publish their rate limits.
 - All endpoints are OpenAI SDK-compatible unless noted.
 - Each link points to the provider's API key page.
+- [^1]: Free tier not available in the EEA, UK, or Switzerland ([available regions](https://ai.google.dev/gemini-api/docs/available-regions)).
