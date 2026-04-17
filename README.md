@@ -26,6 +26,8 @@ APIs run by the companies that train or fine-tune the models themselves.
 
 Free "Trial" API key, no credit card. 1,000 API calls/month. Non-commercial use only.
 
+Base URL: `https://api.cohere.com/v2`
+
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
 | Command A (111B) | 256K | 4K | Text | 20 RPM |
@@ -39,6 +41,8 @@ Free "Trial" API key, no credit card. 1,000 API calls/month. Non-commercial use 
 
 Free tier unavailable in EU/UK/Switzerland. Free-tier prompts may be used by Google to improve products. [^1]
 
+Base URL: `https://generativelanguage.googleapis.com/v1beta`
+
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
 | Gemini 2.5 Flash | 1M | 65K | Text + Image + Audio + Video | 10 RPM, 250 RPD |
@@ -47,6 +51,8 @@ Free tier unavailable in EU/UK/Switzerland. Free-tier prompts may be used by Goo
 ### [Mistral AI](https://console.mistral.ai/api-keys) 🇫🇷
 
 Free "Experiment" plan, no credit card. ~1B tokens/month.
+
+Base URL: `https://api.mistral.ai/v1`
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -60,6 +66,8 @@ Free "Experiment" plan, no credit card. ~1B tokens/month.
 ### [Z AI (Zhipu AI)](https://open.bigmodel.cn/usercenter/apikeys) 🇨🇳
 
 Permanent free models, no credit card required.
+
+Base URL: `https://open.bigmodel.cn/api/paas/v4`
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -75,6 +83,8 @@ Third-party platforms that host open-weight models from various sources.
 
 Free tier, no credit card. Ultra-fast inference (~2,600 tok/s). 1M tokens/day cap.
 
+Base URL: `https://api.cerebras.ai/v1`
+
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
 | llama3.1-8b | 128K (8K on free) | 8K | Text | 30 RPM, 14,400 RPD, 1M TPD |
@@ -85,6 +95,8 @@ Free tier, no credit card. Ultra-fast inference (~2,600 tok/s). 1M tokens/day ca
 ### [Cloudflare Workers AI](https://dash.cloudflare.com/profile/api-tokens) 🇺🇸
 
 10,000 Neurons/day free. 50+ models available on free tier.
+
+Base URL: `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run`
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -100,7 +112,9 @@ Free tier, no credit card. Ultra-fast inference (~2,600 tok/s). 1M tokens/day ca
 
 ### [GitHub Models](https://github.com/marketplace/models) 🇺🇸
 
-Free prototyping for all GitHub users. Per-request limits: 8K in / 4K out.
+Free prototyping for all GitHub users. 45+ models. Per-request limits (8K in / 4K out).
+
+Base URL: `https://models.inference.ai.azure.com`
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -120,6 +134,8 @@ Free prototyping for all GitHub users. Per-request limits: 8K in / 4K out.
 
 Free tier, no credit card. Ultra-fast LPU inference. [^2]
 
+Base URL: `https://api.groq.com/openai/v1`
+
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
 | llama-3.3-70b-versatile | 131K | 32K | Text | 30 RPM, 14,400 RPD |
@@ -135,7 +151,9 @@ Free tier, no credit card. Ultra-fast LPU inference. [^2]
 
 ### [Hugging Face](https://huggingface.co/settings/tokens) 🇺🇸
 
-Free Serverless Inference API + ~$0.10/month free credits.
+Free Serverless Inference API + ~$0.10/month free credits. Thousands of models.
+
+Base URL: `https://api-inference.huggingface.co/models`
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -148,26 +166,23 @@ Free Serverless Inference API + ~$0.10/month free credits.
 
 ### [Kilo Code](https://kilo.ai) 🇺🇸
 
-Free models with no credit card required. Base URL: `https://api.kilo.ai/api/gateway`. [^5]
+Free models with no credit card required. `kilo-auto/free` auto-router routes to minimax/minimax-m2.5:free (80%) and stepfun/step-3.5-flash:free (20%). [^5]
+
+Base URL: `https://api.kilo.ai/api/gateway`
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
-| qwen/qwen3.6-plus-preview:free | 1M | 32K | Text + Image + Video | ~200 req/hr |
+| bytedance-seed/dola-seed-2.0-pro:free | — | — | Text | ~200 req/hr |
+| x-ai/grok-code-fast-1:optimized:free | — | — | Text (code) | ~200 req/hr |
 | nvidia/nemotron-3-super-120b-a12b:free | 262K | 32K | Text | ~200 req/hr |
-| stepfun/step-3.5-flash:free | 256K | 65K | Text | ~200 req/hr |
-| corethink:free | ~78K | ~8K | Text | ~200 req/hr |
-| minimax/minimax-m2.5:free | 196K | 196K | Text | ~200 req/hr |
-| arcee-ai/trinity-large-preview:free | 128K | ~32K | Text | ~200 req/hr |
-| kwaipilot/kat-coder-pro:free | 262K | 128K | Text (code) | ~200 req/hr |
-| qwen/qwen3-coder:free | 262K | 262K | Text (code) | ~200 req/hr |
-| google/gemma-4-31b-it:free | 262K | — | Multimodal | ~200 req/hr |
-| deepseek/deepseek-r1-0528:free | — | — | Text (reasoning) | ~200 req/hr |
-| meta-llama/llama-3.3-70b-instruct:free | — | — | Text | ~200 req/hr |
-| + ~18 more rotating free models | Varies | Varies | Text / Image | ~200 req/hr |
+| arcee-ai/trinity-large-thinking:free | — | — | Text (reasoning) | ~200 req/hr |
+| openrouter/free | Varies | Varies | Text | ~200 req/hr |
 
 ### [LLM7.io](https://token.llm7.io) 🇬🇧
 
-Zero-friction API gateway. No registration needed for basic access.
+Zero-friction API gateway. No registration needed for basic access. 30+ models.
+
+Base URL: `https://api.llm7.io/v1`
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -181,7 +196,9 @@ Zero-friction API gateway. No registration needed for basic access.
 
 ### [NVIDIA NIM](https://build.nvidia.com/explore/discover) 🇺🇸
 
-Free with NVIDIA Developer Program membership. No daily token cap.
+Free with NVIDIA Developer Program membership. 100+ models. No daily token cap.
+
+Base URL: `https://integrate.api.nvidia.com/v1`
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -199,7 +216,9 @@ Free with NVIDIA Developer Program membership. No daily token cap.
 
 ### [Ollama Cloud](https://ollama.com/settings/keys) 🇺🇸
 
-Free tier with qualitative usage limits.
+Free tier with qualitative usage limits. 400+ models from Ollama library. Not OpenAI SDK-compatible; uses [Ollama API](https://docs.ollama.com/cloud). [^3]
+
+Base URL: `https://api.ollama.com`
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -213,6 +232,8 @@ Free tier with qualitative usage limits.
 ### [OpenRouter](https://openrouter.ai/keys) 🇺🇸
 
 35+ free models (marked with `:free` suffix). OpenAI SDK-compatible. [^4]
+
+Base URL: `https://openrouter.ai/api/v1`
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -233,6 +254,8 @@ Free tier with qualitative usage limits.
 ### [SiliconFlow](https://cloud.siliconflow.cn/account/ak) 🇨🇳
 
 Free tier with 14 CNY signup credits. Permanently free models available.
+
+Base URL: `https://api.siliconflow.cn/v1`
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -267,4 +290,4 @@ Know a free tier that's missing? [Open a PR](contributing.md). Include the provi
 [^2]: Groq rate limits vary by model. Llama 4 Maverick is limited to 500 RPD. Most other models get 14,400 RPD ([rate limits](https://console.groq.com/docs/rate-limits)).
 [^3]: Ollama Cloud measures usage by GPU time, not tokens or requests. Free tier described as "light usage" with session limits resetting every 5 hours and weekly limits every 7 days. Pro (50x more) and Max (250x more) plans available. Not OpenAI SDK-compatible; uses [Ollama API](https://docs.ollama.com/cloud).
 [^4]: Free models default to 200 RPD. A one-time purchase of $10+ in credits unlocks 1,000 RPD for free models. OpenRouter also offers a [Free Models Router](https://openrouter.ai/docs/guides/routing/routers/free-models-router) (`openrouter/free`) and [model fallbacks](https://openrouter.ai/docs/guides/routing/model-fallbacks) for chaining models in priority order.
-[^5]: Kilo Code free model list is dynamic and rotates based on partnerships. Free models log prompts for improvement. Auto-router available: `kilo-auto/free`.
+[^5]: Kilo Code free model list may change over time. nvidia/nemotron-3-super-120b-a12b:free is for trial use only — prompts are logged by NVIDIA. Auto-router `kilo-auto/free` routes to minimax/minimax-m2.5:free (80%) and stepfun/step-3.5-flash:free (20%).

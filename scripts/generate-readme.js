@@ -36,13 +36,16 @@ function buildProviderSection(provider) {
 	const desc = provider.footnoteRef != null
 		? `${provider.description} [^${provider.footnoteRef}]`
 		: provider.description;
-	return [
+	const parts = [
 		`### [${provider.name}](${provider.url}) ${provider.flag}`,
 		'',
 		desc,
-		'',
-		buildTable(provider.models),
-	].join('\n');
+	];
+	if (provider.baseUrl != null) {
+		parts.push('', `Base URL: \`${provider.baseUrl}\``);
+	}
+	parts.push('', buildTable(provider.models));
+	return parts.join('\n');
 }
 
 const providerAPIs = data.providers

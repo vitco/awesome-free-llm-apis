@@ -7,6 +7,7 @@
       "country": "CA",
       "flag": "🇨🇦",
       "url": "https://dashboard.cohere.com/api-keys",
+      "baseUrl": "https://api.cohere.com/v2",
       "description": "Free \"Trial\" API key, no credit card. 1,000 API calls/month. Non-commercial use only.",
       "footnoteRef": null,
       "models": [
@@ -60,6 +61,7 @@
       "country": "US",
       "flag": "🇺🇸",
       "url": "https://aistudio.google.com/app/apikey",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
       "description": "Free tier unavailable in EU/UK/Switzerland. Free-tier prompts may be used by Google to improve products.",
       "footnoteRef": 1,
       "models": [
@@ -85,6 +87,7 @@
       "country": "FR",
       "flag": "🇫🇷",
       "url": "https://console.mistral.ai/api-keys",
+      "baseUrl": "https://api.mistral.ai/v1",
       "description": "Free \"Experiment\" plan, no credit card. ~1B tokens/month.",
       "footnoteRef": null,
       "models": [
@@ -138,6 +141,7 @@
       "country": "CN",
       "flag": "🇨🇳",
       "url": "https://open.bigmodel.cn/usercenter/apikeys",
+      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
       "description": "Permanent free models, no credit card required.",
       "footnoteRef": null,
       "models": [
@@ -170,6 +174,7 @@
       "country": "US",
       "flag": "🇺🇸",
       "url": "https://cloud.cerebras.ai/",
+      "baseUrl": "https://api.cerebras.ai/v1",
       "description": "Free tier, no credit card. Ultra-fast inference (~2,600 tok/s). 1M tokens/day cap.",
       "footnoteRef": null,
       "models": [
@@ -209,6 +214,7 @@
       "country": "US",
       "flag": "🇺🇸",
       "url": "https://dash.cloudflare.com/profile/api-tokens",
+      "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run",
       "description": "10,000 Neurons/day free. 50+ models available on free tier.",
       "footnoteRef": null,
       "models": [
@@ -283,6 +289,7 @@
       "country": "US",
       "flag": "🇺🇸",
       "url": "https://github.com/marketplace/models",
+      "baseUrl": "https://models.inference.ai.azure.com",
       "description": "Free prototyping for all GitHub users. 45+ models. Per-request limits (8K in / 4K out).",
       "footnoteRef": null,
       "models": [
@@ -371,6 +378,7 @@
       "country": "US",
       "flag": "🇺🇸",
       "url": "https://console.groq.com/keys",
+      "baseUrl": "https://api.groq.com/openai/v1",
       "description": "Free tier, no credit card. Ultra-fast LPU inference.",
       "footnoteRef": 2,
       "models": [
@@ -452,6 +460,7 @@
       "country": "US",
       "flag": "🇺🇸",
       "url": "https://huggingface.co/settings/tokens",
+      "baseUrl": "https://api-inference.huggingface.co/models",
       "description": "Free Serverless Inference API + ~$0.10/month free credits. Thousands of models.",
       "footnoteRef": null,
       "models": [
@@ -505,14 +514,22 @@
       "country": "US",
       "flag": "🇺🇸",
       "url": "https://kilo.ai",
-      "description": "Free models with no credit card required. ~29 rotating free models. Base URL: `https://api.kilo.ai/api/gateway`.",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "description": "Free models with no credit card required. `kilo-auto/free` auto-router routes to minimax/minimax-m2.5:free (80%) and stepfun/step-3.5-flash:free (20%).",
       "footnoteRef": 5,
       "models": [
         {
-          "name": "qwen/qwen3.6-plus-preview:free",
-          "context": "1M",
-          "maxOutput": "32K",
-          "modality": "Text + Image + Video",
+          "name": "bytedance-seed/dola-seed-2.0-pro:free",
+          "context": "—",
+          "maxOutput": "—",
+          "modality": "Text",
+          "rateLimit": "~200 req/hr"
+        },
+        {
+          "name": "x-ai/grok-code-fast-1:optimized:free",
+          "context": "—",
+          "maxOutput": "—",
+          "modality": "Text (code)",
           "rateLimit": "~200 req/hr"
         },
         {
@@ -523,73 +540,17 @@
           "rateLimit": "~200 req/hr"
         },
         {
-          "name": "stepfun/step-3.5-flash:free",
-          "context": "256K",
-          "maxOutput": "65K",
-          "modality": "Text",
-          "rateLimit": "~200 req/hr"
-        },
-        {
-          "name": "corethink:free",
-          "context": "~78K",
-          "maxOutput": "~8K",
-          "modality": "Text",
-          "rateLimit": "~200 req/hr"
-        },
-        {
-          "name": "minimax/minimax-m2.5:free",
-          "context": "196K",
-          "maxOutput": "196K",
-          "modality": "Text",
-          "rateLimit": "~200 req/hr"
-        },
-        {
-          "name": "arcee-ai/trinity-large-preview:free",
-          "context": "128K",
-          "maxOutput": "~32K",
-          "modality": "Text",
-          "rateLimit": "~200 req/hr"
-        },
-        {
-          "name": "kwaipilot/kat-coder-pro:free",
-          "context": "262K",
-          "maxOutput": "128K",
-          "modality": "Text (code)",
-          "rateLimit": "~200 req/hr"
-        },
-        {
-          "name": "qwen/qwen3-coder:free",
-          "context": "262K",
-          "maxOutput": "262K",
-          "modality": "Text (code)",
-          "rateLimit": "~200 req/hr"
-        },
-        {
-          "name": "google/gemma-4-31b-it:free",
-          "context": "262K",
-          "maxOutput": "—",
-          "modality": "Multimodal",
-          "rateLimit": "~200 req/hr"
-        },
-        {
-          "name": "deepseek/deepseek-r1-0528:free",
+          "name": "arcee-ai/trinity-large-thinking:free",
           "context": "—",
           "maxOutput": "—",
           "modality": "Text (reasoning)",
           "rateLimit": "~200 req/hr"
         },
         {
-          "name": "meta-llama/llama-3.3-70b-instruct:free",
-          "context": "—",
-          "maxOutput": "—",
-          "modality": "Text",
-          "rateLimit": "~200 req/hr"
-        },
-        {
-          "name": "+ ~18 more rotating free models",
+          "name": "openrouter/free",
           "context": "Varies",
           "maxOutput": "Varies",
-          "modality": "Text / Image",
+          "modality": "Text",
           "rateLimit": "~200 req/hr"
         }
       ]
@@ -600,6 +561,7 @@
       "country": "GB",
       "flag": "🇬🇧",
       "url": "https://token.llm7.io",
+      "baseUrl": "https://api.llm7.io/v1",
       "description": "Zero-friction API gateway. No registration needed for basic access. 30+ models.",
       "footnoteRef": null,
       "models": [
@@ -660,6 +622,7 @@
       "country": "US",
       "flag": "🇺🇸",
       "url": "https://build.nvidia.com/explore/discover",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
       "description": "Free with NVIDIA Developer Program membership. 100+ models. No daily token cap.",
       "footnoteRef": null,
       "models": [
@@ -748,6 +711,7 @@
       "country": "US",
       "flag": "🇺🇸",
       "url": "https://ollama.com/settings/keys",
+      "baseUrl": "https://api.ollama.com",
       "description": "Free tier with qualitative usage limits. 400+ models from Ollama library. Not OpenAI SDK-compatible; uses [Ollama API](https://docs.ollama.com/cloud).",
       "footnoteRef": 3,
       "models": [
@@ -801,6 +765,7 @@
       "country": "US",
       "flag": "🇺🇸",
       "url": "https://openrouter.ai/keys",
+      "baseUrl": "https://openrouter.ai/api/v1",
       "description": "35+ free models (marked with `:free` suffix). OpenAI SDK-compatible.",
       "footnoteRef": 4,
       "models": [
@@ -903,6 +868,7 @@
       "country": "CN",
       "flag": "🇨🇳",
       "url": "https://cloud.siliconflow.cn/account/ak",
+      "baseUrl": "https://api.siliconflow.cn/v1",
       "description": "Free tier with 14 CNY signup credits. Permanently free models available.",
       "footnoteRef": null,
       "models": [
@@ -977,7 +943,7 @@
     },
     {
       "id": 5,
-      "text": "Kilo Code free model list is dynamic and rotates based on partnerships. Free models log prompts for improvement. Auto-router available: `kilo-auto/free`."
+      "text": "Kilo Code free model list may change over time. nvidia/nemotron-3-super-120b-a12b:free is for trial use only — prompts are logged by NVIDIA. Auto-router `kilo-auto/free` routes to minimax/minimax-m2.5:free (80%) and stepfun/step-3.5-flash:free (20%)."
     }
   ],
   "glossary": [
