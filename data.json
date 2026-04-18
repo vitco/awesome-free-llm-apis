@@ -20,7 +20,7 @@
           "rateLimit": "20 RPM"
         },
         {
-          "id": "command-r-plus",
+          "id": "command-r-plus-08-2024",
           "name": "Command R+",
           "context": "128K",
           "maxOutput": "4K",
@@ -28,7 +28,7 @@
           "rateLimit": "20 RPM"
         },
         {
-          "id": "command-r",
+          "id": "command-r-08-2024",
           "name": "Command R",
           "context": "128K",
           "maxOutput": "4K",
@@ -36,7 +36,7 @@
           "rateLimit": "20 RPM"
         },
         {
-          "id": "command-r7b",
+          "id": "command-r7b-12-2024",
           "name": "Command R7B",
           "context": "128K",
           "maxOutput": "4K",
@@ -100,7 +100,7 @@
       "footnoteRef": null,
       "models": [
         {
-          "id": "mistral-small-2503",
+          "id": "mistral-small-2603",
           "name": "Mistral Small 4",
           "context": "256K",
           "maxOutput": "256K",
