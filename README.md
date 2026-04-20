@@ -151,7 +151,7 @@ Base URL: `https://api.groq.com/openai/v1`
 
 ### [Hugging Face](https://huggingface.co/settings/tokens) 🇺🇸
 
-Free Serverless Inference API
+Free Serverless Inference API + ~$0.10/month free credits. Thousands of models.
 
 Base URL: `https://api-inference.huggingface.co/models`
 
@@ -162,6 +162,7 @@ Base URL: `https://api-inference.huggingface.co/models`
 | Mixtral-8x7B-Instruct-v0.1 | 32K | ~4K | Text | ~1,000 RPD |
 | Phi-3.5-mini-instruct | 128K | ~4K | Text | ~1,000 RPD |
 | Qwen2.5-7B-Instruct | 131K | ~4K | Text | ~1,000 RPD |
+| + thousands of community models | Varies | Varies | Text, Image, Audio, Embeddings | ~$0.10/month free credits |
 
 ### [Kilo Code](https://kilo.ai) 🇺🇸
 
